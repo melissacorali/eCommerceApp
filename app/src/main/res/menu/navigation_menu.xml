@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="home"
+        app:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/categoriesFragment"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="shop"
+        app:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/basketFragment"
+        android:icon="@drawable/ic_baseline_shopping_bag_24"
+        android:title="bag"
+        app:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/favoriteFragment"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title="favorites"
+        app:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="profile"
+        app:showAsAction="ifRoom">
+    </item>
+
+</menu>
