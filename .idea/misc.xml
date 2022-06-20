@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2095" />
+        <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/drawable/bottom_sheet_bg.xml" value="0.2385" />
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/drawable/button.xml" value="0.232" />
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/drawable/fashion_background.xml" value="0.2095" />
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/drawable/ic_baseline_arrow_right_alt_24.xml" value="0.1595" />
@@ -12,18 +13,27 @@
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/drawable/ic_baseline_shopping_bag_24.xml" value="0.2095" />
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.2095" />
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2095" />
+        <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/font/acme.xml" value="0.396875" />
+        <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/font/advent_pro_thin.xml" value="0.38125" />
+        <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/font/alata.xml" value="0.21822916666666667" />
+        <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/font/suez_one.xml" value="0.38125" />
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/layout/categories_item.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/layout/fragment_basket.xml" value="0.3482789855072464" />
+        <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/layout/fragment_cart.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/layout/fragment_categories.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/layout/fragment_entry.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/layout/fragment_favorite.xml" value="0.3482789855072464" />
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/layout/fragment_forget_password.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/layout/fragment_login.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/layout/fragment_login2.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/layout/fragment_profile.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/layout/fragment_sign_up.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/layout/fragment_success.xml" value="0.3482789855072464" />
+        <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/layout/product_bottom_sheet.xml" value="0.264" />
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/layout/products_item.xml" value="0.3302083333333333" />
-        <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/menu/navigation_menu.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/menu/navigation_menu.xml" value="0.1" />
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2095" />
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2095" />
       </map>

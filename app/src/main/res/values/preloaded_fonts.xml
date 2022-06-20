@@ -2,10 +2,7 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/acme</item>
-        <item>@font/advent_pro_thin</item>
         <item>@font/alata</item>
-        <item>@font/arbutus_slab</item>
-        <item>@font/galdeano</item>
-        <item>@font/suez_one</item>
+
     </array>
 </resources>

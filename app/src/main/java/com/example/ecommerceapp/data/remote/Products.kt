@@ -1,5 +1,8 @@
 package com.example.ecommerceapp.data.remote
 
+import android.os.Parcelable
+
+
 data class Products(
     val category: String?,
     val count: String?,
@@ -11,3 +14,4 @@ data class Products(
     val title: String?,
     val user: String?
 )
+
