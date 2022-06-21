@@ -2,6 +2,7 @@ package com.example.ecommerceapp.presentation.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ecommerceapp.data.remote.Products
 import com.example.ecommerceapp.databinding.ProductsItemBinding
@@ -34,7 +35,12 @@ class HomeProductAdapter: RecyclerView.Adapter<HomeProductAdapter.ProductItemDes
                           product.image.let {
                             Picasso.get().load(it).into(productsImageView)
                           }
+                          productsImageView.setOnClickListener {
+                              var action = HomeFragmentDirections.actionHomeFragmentToCartFragment(product)
+                                it.findNavController().navigate(action)
+                          }
                       }
+
                   }
 
               }

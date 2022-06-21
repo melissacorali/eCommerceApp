@@ -3,15 +3,12 @@ package com.example.ecommerceapp.presentation.categories
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.ecommerceapp.data.remote.Categories
 import com.example.ecommerceapp.data.remote.Products
 import com.example.ecommerceapp.databinding.CategoriesItemBinding
-import com.example.ecommerceapp.databinding.ProductsItemBinding
-import com.squareup.picasso.Picasso
 
 class CategoriesAdapter: RecyclerView.Adapter<CategoriesAdapter.CategoryItemDesign>() {
 
-    private val categoryList = ArrayList<Categories>()
+    private val categoryList = ArrayList<String>()
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -25,11 +22,10 @@ class CategoriesAdapter: RecyclerView.Adapter<CategoriesAdapter.CategoryItemDesi
     }
 
 
-
     inner class CategoryItemDesign(private var categoriesItemBinding: CategoriesItemBinding) :
         RecyclerView.ViewHolder(categoriesItemBinding.root){
 
-        fun bind(category: Categories){
+        fun bind(category: String){
             categoriesItemBinding.apply {
                 categoryModel = category
 
@@ -38,7 +34,7 @@ class CategoriesAdapter: RecyclerView.Adapter<CategoriesAdapter.CategoryItemDesi
 
     }
 
-    fun updateList(list: List<Categories>){
+    fun updateList(list: List<String>){
         categoryList.clear()
         categoryList.addAll(list)
         notifyDataSetChanged()

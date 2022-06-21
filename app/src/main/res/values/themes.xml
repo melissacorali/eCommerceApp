@@ -1,6 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.ECommerceApp" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
         <!-- Primary brand color. -->
         <item name="colorPrimary">#FFC54D</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>

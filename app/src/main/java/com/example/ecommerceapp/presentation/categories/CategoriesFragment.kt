@@ -38,19 +38,19 @@ class CategoriesFragment : Fragment() {
         initObservers()
     }
     private fun initObservers() {
-     with(binding){
-         with(viewModel){
+        with(binding){
+            with(viewModel){
 
-             categoryList.observe(viewLifecycleOwner){list ->
-                 CategoryrecyclerView.apply {
-                     setHasFixedSize(true)
-                     adapter = categoriesAdapter.also {
-                         it.updateList(list)
-                     }
-                 }
-             }
-         }
-     }
+                categoryList.observe(viewLifecycleOwner){list ->
+                    CategoryrecyclerView.apply {
+                        setHasFixedSize(true)
+                        adapter = categoriesAdapter.also {
+                            it.updateList(list)
+                        }
+                    }
+                }
+            }
+        }
     }
 
     override fun onDestroyView() {

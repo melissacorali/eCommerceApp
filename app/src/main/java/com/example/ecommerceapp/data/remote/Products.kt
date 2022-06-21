@@ -1,9 +1,11 @@
 package com.example.ecommerceapp.data.remote
 
 import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 
-
+@Parcelize
 data class Products(
+
     val category: String?,
     val count: String?,
     val description: String?,
@@ -13,5 +15,5 @@ data class Products(
     val rate: String?,
     val title: String?,
     val user: String?
-)
+) : Parcelable
 

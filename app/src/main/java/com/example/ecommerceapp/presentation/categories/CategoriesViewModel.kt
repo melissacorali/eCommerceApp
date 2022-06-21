@@ -5,17 +5,14 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.ecommerceapp.data.remote.Categories
-import com.example.ecommerceapp.data.remote.Products
-import com.example.ecommerceapp.data.repository.CategoryRepository
 import com.example.ecommerceapp.data.repository.ProductsRepository
 import kotlinx.coroutines.launch
 
 class CategoriesViewModel(context: Context) : ViewModel() {
-    private var categoryRepo = CategoryRepository(context)
+    private var categoryRepo = ProductsRepository(context)
 
-    private var _categoryList = MutableLiveData<List<Categories>>()
-    val categoryList: LiveData<List<Categories>>
+    private var _categoryList = MutableLiveData<List<String>>()
+    val categoryList: LiveData<List<String>>
         get() = _categoryList
 
 
@@ -24,8 +21,8 @@ class CategoriesViewModel(context: Context) : ViewModel() {
         get() = _isLoading
 
     init {
-      //  getCategoryByUser("melissacorali")
-        getAllCategory()
+        getCategoryByUser("melissacorali")
+
     }
 
 
@@ -38,9 +35,5 @@ class CategoriesViewModel(context: Context) : ViewModel() {
 
 
     }
-    fun getAllCategory(){
-        categoryRepo.getAllCategory()
-        _categoryList = categoryRepo.categoryList
-        _isLoading = categoryRepo.isLoading
-    }
+
 }

@@ -12,44 +12,45 @@
             android:layout_height="match_parent"
             tools:context=".presentation.categories.CategoriesFragment">
 
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/CategoryrecyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/choose" />
-
+                app:layout_constraintTop_toBottomOf="@+id/choose"
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/choose"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
                 android:text="Choose Category"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.052"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="174dp"
+                app:layout_constraintTop_toBottomOf="@+id/loginbutton"
                 tools:ignore="MissingConstraints" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/loginbutton"
                 android:layout_width="332dp"
                 android:layout_height="42dp"
-                android:layout_marginBottom="56dp"
+                android:layout_marginTop="60dp"
                 android:background="@drawable/button"
                 android:fontFamily="@font/alata"
                 android:text="VIEW ALL ITEMS"
                 android:textColor="@color/black"
-                app:layout_constraintBottom_toTopOf="@+id/choose"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.493"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>

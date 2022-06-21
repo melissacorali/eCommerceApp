@@ -47,12 +47,24 @@
         android:id="@+id/homeFragment"
         android:name="com.example.ecommerceapp.presentation.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_categoriesFragment"
+            app:destination="@id/categoriesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
     <fragment
         android:id="@+id/cartFragment"
         android:name="com.example.ecommerceapp.presentation.cart.CartFragment"
         android:label="fragment_cart"
-        tools:layout="@layout/fragment_cart" />
+        tools:layout="@layout/fragment_cart" >
+        <argument
+            android:name="productModel"
+            app:argType="com.example.ecommerceapp.data.remote.Products" />
+    </fragment>
+
     <fragment
         android:id="@+id/basketFragment"
         android:name="com.example.ecommerceapp.presentation.basket.BasketFragment"
@@ -78,4 +90,5 @@
         android:name="com.example.ecommerceapp.presentation.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+
 </navigation>

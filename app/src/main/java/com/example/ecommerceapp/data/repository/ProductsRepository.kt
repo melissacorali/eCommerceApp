@@ -16,6 +16,7 @@ import retrofit2.http.Field
 class ProductsRepository(context: Context) {
 
     var productList = MutableLiveData<List<Products>>()
+    var categoryList = MutableLiveData<List<String>>()
 
     var isLoading = MutableLiveData<Boolean>()
 
@@ -65,7 +66,27 @@ class ProductsRepository(context: Context) {
         })
 
     }
+    fun getCategoryByUser(user: String){
+        isLoading.value = true
+        productsDIF.getCategoriesByUser(user).enqueue(object : Callback<List<String>> {
+            override fun onResponse(
+                call: Call<List<String>>,
+                response: Response<List<String>>
+            ) {
+                response.body()?.let {
+                    categoryList.value = it
+                    isLoading.value = false
+                } ?: run {
+                    isLoading.value = false
+                }
+            }
 
+            override fun onFailure(call: Call<List<String>>, t: Throwable) {
+                t.localizedMessage?.toString()?.let { Log.e("Products fail", it) }
+                isLoading.value = false
+            }
+        })
+    }
 
 
 }
