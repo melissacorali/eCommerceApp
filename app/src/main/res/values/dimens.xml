@@ -48,8 +48,8 @@
     <dimen name="divider_width_profile">3dp</dimen>
     <dimen name="divider_height_profile">75dp</dimen>
 
-    <dimen name="image_card_width">150dp</dimen>
-    <dimen name="image_card_height">225dp</dimen>
+    <dimen name="image_card_width">170dp</dimen>
+    <dimen name="image_card_height">230dp</dimen>
 
     <dimen name="profile_card_width_height">200dp</dimen>
 

@@ -49,6 +49,9 @@ class MainActivity : AppCompatActivity() {
             else if(destination.id == R.id.forgetPasswordFragment){
              bottomNavigationView.visibility = View.GONE
             }
+            else if(destination.id == R.id.cartFragment){
+                bottomNavigationView.visibility = View.GONE
+            }
             else{
              bottomNavigationView.visibility = View.VISIBLE
          }
