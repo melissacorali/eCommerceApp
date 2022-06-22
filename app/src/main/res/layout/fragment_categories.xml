@@ -35,11 +35,11 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.052"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/loginbutton"
+                app:layout_constraintTop_toBottomOf="@+id/viewAllbutton"
                 tools:ignore="MissingConstraints" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/loginbutton"
+                android:id="@+id/viewAllbutton"
                 android:layout_width="332dp"
                 android:layout_height="42dp"
                 android:layout_marginTop="60dp"

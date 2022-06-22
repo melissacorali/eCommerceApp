@@ -2,6 +2,7 @@ package com.example.ecommerceapp.presentation.categories
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ecommerceapp.data.remote.Products
 import com.example.ecommerceapp.databinding.CategoriesItemBinding
@@ -29,6 +30,10 @@ class CategoriesAdapter: RecyclerView.Adapter<CategoriesAdapter.CategoryItemDesi
             categoriesItemBinding.apply {
                 categoryModel = category
 
+                ProductsTitle.setOnClickListener {
+                    val action = CategoriesFragmentDirections.actionCategoriesFragmentToProductFragment(category)
+                    it.findNavController().navigate(action)
+                }
             }
         }
 

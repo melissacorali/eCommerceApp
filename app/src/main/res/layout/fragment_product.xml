@@ -13,14 +13,34 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="136dp"
+                app:layout_constraintBottom_toTopOf="@+id/allBooksRecycler"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                android:backgroundTint="@color/white">
+
+
+                <ImageButton
+                    android:id="@+id/imageBack"
+                    android:layout_width="61dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+            </com.google.android.material.appbar.AppBarLayout>
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/allBooksRecycler"
                 android:layout_width="413dp"
-                android:layout_height="518dp"
-                android:layout_marginTop="207dp"
+                android:layout_height="532dp"
+                android:layout_marginTop="200dp"
                 android:padding="@dimen/padding_medium_small"
                 app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:spanCount="2">

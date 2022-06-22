@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         val navController: NavController = navHostFragment.navController
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomnavigation)
+
         val appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.homeFragment,

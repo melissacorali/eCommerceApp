@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.example.ecommerceapp.R
 import com.example.ecommerceapp.databinding.FragmentCartBinding
 import androidx.navigation.fragment.navArgs
@@ -42,6 +43,9 @@ class CartFragment : Fragment() {
             productModel = product
             Picasso.get().load(product.image).into(productImage)
 
+            imageback.setOnClickListener {
+                it.findNavController().navigateUp()
+            }
 
         }
     }
