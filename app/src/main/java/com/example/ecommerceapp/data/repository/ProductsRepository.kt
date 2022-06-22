@@ -4,6 +4,7 @@ import android.content.Context
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import com.example.ecommerceapp.data.remote.Products
+import com.example.ecommerceapp.data.response.CRUDResponse
 import com.example.ecommerceapp.data.response.ProductsResponse
 import com.example.ecommerceapp.data.retrofit.ProductsDAOInterface
 import com.example.ecommerceapp.utils.ApiUtils
@@ -19,7 +20,7 @@ class ProductsRepository(context: Context) {
     var categoryList = MutableLiveData<List<String>>()
 
     var isLoading = MutableLiveData<Boolean>()
-
+    var status = MutableLiveData<Int>()
 
     private val productsDIF: ProductsDAOInterface = ApiUtils.getProductsDAOInterface()
 
@@ -83,6 +84,25 @@ class ProductsRepository(context: Context) {
 
             override fun onFailure(call: Call<List<String>>, t: Throwable) {
                 t.localizedMessage?.toString()?.let { Log.e("Products fail", it) }
+                isLoading.value = false
+            }
+        })
+    }
+
+    fun addToBag(user: String, title: String, price: Double, description: String, category: String, image: String, rate: Double, count: Int, sale_state: Int ){
+        isLoading.value = true
+        productsDIF.addToBag(user,title,price,description,category,image,rate,count,sale_state).enqueue(object : Callback<CRUDResponse>{
+            override fun onResponse(call: Call<CRUDResponse>, response: Response<CRUDResponse>) {
+                response.body()?.let {
+                    status.value = 1
+                    isLoading.value = false
+                } ?: run {
+                    isLoading.value = false
+                }
+            }
+
+            override fun onFailure(call: Call<CRUDResponse>, t: Throwable) {
+                t.localizedMessage?.toString()?.let { Log.e("add to bag fail", it) }
                 isLoading.value = false
             }
         })

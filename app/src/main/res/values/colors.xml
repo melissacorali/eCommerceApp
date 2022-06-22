@@ -8,5 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="entry">#FFC54D</color>
-    <color name="cards">#FFFCFC</color>
+    <color name="cards">#F1F1F1</color>
 </resources>

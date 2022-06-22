@@ -18,6 +18,8 @@ class CartFragment : Fragment() {
     private var _binding: FragmentCartBinding? = null
     private val binding get() = _binding!!
 
+    private val viewModel by lazy {CartViewModel(requireContext())}
+
     private val args: CartFragmentArgs by navArgs()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,6 +47,20 @@ class CartFragment : Fragment() {
 
             imageback.setOnClickListener {
                 it.findNavController().navigateUp()
+            }
+            addtocard.setOnClickListener {
+            viewModel.addToBag(
+                user = product.user,
+                title = product.title,
+                price = product.price.toDouble(),
+                description = product.description,
+                category = product.category,
+                image = product.image,
+                rate = product.rate.toDouble(),
+                count = product.count.toInt(),
+                sale_state = 0
+
+            )
             }
 
         }
