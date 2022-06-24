@@ -5,13 +5,13 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.ecommerceapp.data.remote.Products
-import com.example.ecommerceapp.data.repository.ProductsRepository
+import com.example.ecommerceapp.data.repository.RemoteRepository
 import kotlinx.coroutines.launch
 
 
 class HomeViewModel(context: Context) : ViewModel() {
 
-    private var productsRepo = ProductsRepository(context)
+    private var productsRepo = RemoteRepository(context)
 
     private var _productsList = MutableLiveData<List<Products>>()
     val productsList: LiveData<List<Products>>

@@ -10,6 +10,9 @@ import androidx.navigation.findNavController
 import com.example.ecommerceapp.R
 import com.example.ecommerceapp.databinding.FragmentCartBinding
 import androidx.navigation.fragment.navArgs
+import com.example.ecommerceapp.data.local.ProductFavoriteRoomModel
+import com.example.ecommerceapp.utils.showSnackbar
+import com.google.android.material.snackbar.Snackbar
 import com.squareup.picasso.Picasso
 
 
@@ -61,9 +64,33 @@ class CartFragment : Fragment() {
                 sale_state = 0
 
             )
+
             }
+            addToFavorite.setOnClickListener {
+            viewModel.addToFavorite(
+              ProductFavoriteRoomModel(
+                  id = product.id.toInt(),
+                  category = product.category,
+                  count = product.count,
+                  description = product.description,
+                  image = product.image,
+                  price = product.price,
+                  rate = product.rate,
+                  title = product.title,
+                  user = product.user
+              )
+            )
+            }
+           viewModel.isProductAddedFavorite.observe(viewLifecycleOwner){
+               if (it)  Snackbar.make(view,R.string.add_favorite_text,Snackbar.LENGTH_LONG).show()
+              else Snackbar.make(view,R.string.add_favorite_error,Snackbar.LENGTH_LONG).show()
+
+           }
 
         }
     }
-
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

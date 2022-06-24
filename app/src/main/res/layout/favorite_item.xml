@@ -3,11 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-<data>
-    <variable
-        name="productModel"
-        type="com.example.ecommerceapp.data.remote.Products" />
-</data>
+    <data>
+        <variable
+            name="productModel"
+            type="com.example.ecommerceapp.data.local.ProductFavoriteRoomModel" />
+    </data>
 
 
     <androidx.cardview.widget.CardView
@@ -36,31 +36,21 @@
 
             <TextView
                 android:id="@+id/favoriteTitle"
-                android:layout_width="193dp"
-                android:layout_height="29dp"
-                android:layout_marginBottom="112dp"
+                android:layout_width="199dp"
+                android:layout_height="44dp"
+                android:layout_marginBottom="84dp"
                 android:text="@{productModel.title}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.391"
+                app:layout_constraintHorizontal_bias="0.169"
                 app:layout_constraintStart_toEndOf="@+id/imageView2" />
 
             <TextView
-                android:id="@+id/number"
-                android:layout_width="23dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="24dp"
-                android:text="1"
-                app:layout_constraintEnd_toStartOf="@+id/imageButton"
-                app:layout_constraintStart_toEndOf="@+id/imageButton2"
-                app:layout_constraintTop_toBottomOf="@+id/favoriteTitle" />
-
-            <TextView
                 android:id="@+id/favoritePrice"
-                android:layout_width="77dp"
-                android:layout_height="32dp"
-                android:layout_marginStart="160dp"
-                android:layout_marginBottom="16dp"
+                android:layout_width="51dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="24dp"
                 android:text='@{productModel.price + " ₺"}'
                 android:textColor="@color/black"
                 android:textStyle="bold"
@@ -68,28 +58,30 @@
                 app:layout_constraintStart_toEndOf="@+id/imageView2" />
 
             <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="52dp"
+                android:id="@+id/remove"
+                android:layout_width="31dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="4dp"
                 android:background="@drawable/basket_button"
                 android:backgroundTint="@color/entry"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/favoriteTitle"
-                app:srcCompat="@drawable/ic_baseline_add_24" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_sharp_cancel_24" />
 
             <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="52dp"
-                android:layout_marginTop="24dp"
+                android:id="@+id/imageButton3"
+                android:layout_width="32dp"
+                android:layout_height="28dp"
                 android:background="@drawable/basket_button"
                 android:backgroundTint="@color/entry"
-                app:layout_constraintStart_toEndOf="@+id/imageView2"
-                app:layout_constraintTop_toBottomOf="@+id/favoriteTitle"
-                app:srcCompat="@drawable/ic_baseline_remove_24" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.975"
+                app:layout_constraintStart_toEndOf="@+id/favoritePrice"
+                app:srcCompat="@drawable/ic_baseline_shopping_bag_fav" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

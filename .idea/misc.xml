@@ -37,11 +37,25 @@
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2095" />
         <entry key="..\:/Users/iKnow/AndroidStudioProjects/ECommerceApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2095" />
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/drawable/basket_button.xml" value="0.24" />
+        <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/drawable/bottom_sheet_bg.xml" value="0.2405" />
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/drawable/button.xml" value="0.24" />
+        <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/drawable/fashion_background.xml" value="0.2405" />
+        <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.2405" />
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.167" />
+        <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/drawable/ic_baseline_arrow_right_alt_24.xml" value="0.2405" />
+        <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.2405" />
+        <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2405" />
+        <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2405" />
+        <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/drawable/ic_baseline_remove_24.xml" value="0.2405" />
+        <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/drawable/ic_baseline_shopping_bag_24.xml" value="0.2405" />
+        <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/drawable/ic_baseline_shopping_bag_fav.xml" value="0.2405" />
+        <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.2405" />
+        <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2405" />
+        <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/drawable/ic_sharp_cancel_24.xml" value="0.2405" />
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/activity_main.xml" value="0.25833333333333336" />
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/basket_item.xml" value="0.29010416666666666" />
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/categories_item.xml" value="0.264" />
+        <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/favorite_item.xml" value="0.35104166666666664" />
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/fragment_basket.xml" value="0.28958333333333336" />
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/fragment_cart.xml" value="0.28958333333333336" />
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/fragment_categories.xml" value="0.4" />

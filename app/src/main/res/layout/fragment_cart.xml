@@ -15,6 +15,7 @@
         android:layout_height="match_parent">
 
         <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
             android:layout_width="414dp"
             android:layout_height="45dp"
             android:layout_marginBottom="20dp"
@@ -114,5 +115,19 @@
             app:layout_constraintHorizontal_bias="0.044"
             app:layout_constraintStart_toStartOf="parent"
             tools:text="Product Title" />
+
+        <ImageButton
+            android:id="@+id/addToFavorite"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/basket_button"
+            android:backgroundTint="@color/entry"
+            app:layout_constraintBottom_toTopOf="@+id/price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+            app:layout_constraintVertical_bias="0.926"
+            app:srcCompat="@drawable/ic_baseline_favorite_24" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

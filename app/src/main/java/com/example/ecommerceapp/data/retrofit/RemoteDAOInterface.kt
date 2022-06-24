@@ -8,7 +8,7 @@ import retrofit2.http.FormUrlEncoded
 import retrofit2.http.GET
 import retrofit2.http.POST
 
-interface ProductsDAOInterface {
+interface RemoteDAOInterface {
 
     @GET("get_products.php")
     fun getAllProducts () : Call<List<Products>>
@@ -36,6 +36,12 @@ interface ProductsDAOInterface {
         @Field("count") count: Int,
         @Field("sale_state") sale_state: Int,
     ): Call<CRUDResponse>
+
+    @POST("get_bag_products_by_user.php")
+        @FormUrlEncoded
+        fun getBagProductsByUser(
+            @Field(" user") user: String,
+            ): Call<List<Products>>
 
 
 }
