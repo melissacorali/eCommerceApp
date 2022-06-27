@@ -57,14 +57,16 @@
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/categories_item.xml" value="0.264" />
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/favorite_item.xml" value="0.35104166666666664" />
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/fragment_basket.xml" value="0.28958333333333336" />
-        <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/fragment_cart.xml" value="0.28958333333333336" />
+        <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/fragment_cart.xml" value="0.264" />
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/fragment_categories.xml" value="0.4" />
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/fragment_entry.xml" value="0.29010416666666666" />
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/fragment_favorite.xml" value="0.28958333333333336" />
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/fragment_home.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/fragment_login.xml" value="0.23233695652173914" />
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/fragment_product.xml" value="0.2" />
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/fragment_profile.xml" value="0.29010416666666666" />
-        <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/fragment_sign_up.xml" value="0.29010416666666666" />
+        <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/fragment_sign_up.xml" value="0.4" />
+        <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/fragment_success.xml" value="0.23007246376811594" />
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/product_bottom_sheet.xml" value="0.29010416666666666" />
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/layout/products_item.xml" value="0.17028985507246377" />
         <entry key="..\:/Users/iKnow/Desktop/eCommerceApp/app/src/main/res/menu/navigation_menu.xml" value="0.29010416666666666" />

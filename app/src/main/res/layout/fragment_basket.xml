@@ -26,11 +26,12 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"
-                android:layout_width="0dp"
-                android:layout_height="370dp"
-                android:layout_marginTop="124dp"
+                android:layout_width="416dp"
+                android:layout_height="401dp"
+                android:layout_marginTop="52dp"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -63,6 +64,19 @@
                 app:layout_constraintStart_toEndOf="@+id/totalAmount"
                 app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/goSucces"
+                android:layout_width="332dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="56dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/alata"
+                android:text="CHECK OUT"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/totalprice"
+                app:layout_constraintHorizontal_bias="0.609"
+                app:layout_constraintStart_toStartOf="@+id/totalAmount"
+                app:layout_constraintTop_toBottomOf="@+id/totalAmount" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>

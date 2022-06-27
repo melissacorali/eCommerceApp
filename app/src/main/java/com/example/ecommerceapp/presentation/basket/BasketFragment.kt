@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
 import com.example.ecommerceapp.R
 import com.example.ecommerceapp.databinding.FragmentBasketBinding
 
@@ -34,6 +35,12 @@ class BasketFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         viewModel.getBagProductsByUser(user = "melissacorali")
         initObservers()
+        with(binding){
+            basketAdapter.onRemoveProductClick = {
+                viewModel.deleteFrombag(id)
+            }
+        }
+
 
     }
 
@@ -45,11 +52,25 @@ class BasketFragment : Fragment() {
                 }
                 productsList.observe(viewLifecycleOwner){
                     list ->
+
                     recyclerView.apply {
                         setHasFixedSize(true)
                         adapter = basketAdapter.also {
                             it.updateList(list)
+                            var total = 0
+                            list.forEach {
+                                total = it.price.toInt() + total
+                                totalprice.text = total.toString()
+                            }
+                             goSucces.setOnClickListener {
+                                 findNavController().navigate(R.id.action_basketFragment_to_successFragment)
+                                 list.forEach {
+                                     viewModel.deleteFrombag(it.id.toInt())
+                                 }
+                             }
+
                         }
+
                     }
                 }
             }

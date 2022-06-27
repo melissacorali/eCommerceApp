@@ -12,8 +12,7 @@ import java.lang.StringBuilder
 class BasketAdapter: RecyclerView.Adapter<BasketAdapter.BasketItemDesign>() {
 
     private val productList = ArrayList<Products>()
-    private val adet = MutableLiveData<Int>()
-
+    var onRemoveProductClick: (Int) -> Unit = {}
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BasketAdapter.BasketItemDesign {
        val basketItemBinding = BasketItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -29,11 +28,17 @@ class BasketAdapter: RecyclerView.Adapter<BasketAdapter.BasketItemDesign>() {
             RecyclerView.ViewHolder(basketItemBinding.root){
                 fun bind(product: Products){
                     basketItemBinding.apply {
+                        var count = number.text.toString().toInt()
                         productModel = product
                         imageButton.setOnClickListener {
-
+                            count++
+                             number.text = count.toString()
+                            favoritePrice.text = ((count * product.price.toInt()).toString()) + " ₺".toString()
                         }
                         imageButton2.setOnClickListener {
+                            count--
+                            number.text = count.toString()
+                            favoritePrice.text = ((count * product.price.toInt()).toString()) + " ₺".toString()
                         }
 
                         product.image.let {
@@ -42,6 +47,7 @@ class BasketAdapter: RecyclerView.Adapter<BasketAdapter.BasketItemDesign>() {
 
 
                     }
+
                 }
     }
 

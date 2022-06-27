@@ -32,7 +32,12 @@ class BasketViewModel(context: Context) : ViewModel() {
             _productsList = productsRepo.productList
             _isLoading = productsRepo.isLoading
 
+
         }
+    }
+    fun deleteFrombag(id: Int){
+        productsRepo.deleteFromBag(id)
+        getBagProductsByUser(user = "melissacorali")
     }
 
 }

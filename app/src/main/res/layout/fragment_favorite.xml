@@ -40,9 +40,11 @@
 
             <TextView
                 android:id="@+id/favoriteText"
-                style="@style/login"
                 android:layout_width="259dp"
                 android:layout_height="67dp"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/black"
+                android:textSize="30dp"
                 android:layout_marginTop="4dp"
                 android:text="FAVORITES"
                 app:layout_constraintEnd_toEndOf="parent"

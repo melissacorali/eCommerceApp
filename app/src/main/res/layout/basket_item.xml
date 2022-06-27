@@ -11,6 +11,7 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/basketCard"
         android:layout_width="match_parent"
         android:layout_height="140dp"
         android:layout_margin="@dimen/margin_medium"
@@ -36,13 +37,13 @@
 
             <TextView
                 android:id="@+id/favoriteTitle"
-                android:layout_width="193dp"
-                android:layout_height="29dp"
-                android:layout_marginBottom="112dp"
+                android:layout_width="191dp"
+                android:layout_height="37dp"
+                android:layout_marginBottom="96dp"
                 android:text="@{productModel.title}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.391"
+                app:layout_constraintHorizontal_bias="0.15"
                 app:layout_constraintStart_toEndOf="@+id/imageView2" />
 
             <TextView
@@ -90,6 +91,19 @@
                 app:layout_constraintStart_toEndOf="@+id/imageView2"
                 app:layout_constraintTop_toBottomOf="@+id/favoriteTitle"
                 app:srcCompat="@drawable/ic_baseline_remove_24" />
+
+            <ImageButton
+                android:id="@+id/delete"
+                android:layout_width="34dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/basket_button"
+                android:backgroundTint="@color/entry"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.987"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_delete_24" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
