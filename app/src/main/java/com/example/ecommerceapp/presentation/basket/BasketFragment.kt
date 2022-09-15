@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.example.ecommerceapp.R
 import com.example.ecommerceapp.databinding.FragmentBasketBinding
 
@@ -18,6 +19,7 @@ class BasketFragment : Fragment() {
     private val viewModel by lazy { BasketViewModel(requireContext()) }
     private val basketAdapter by lazy {BasketAdapter() }
 
+    private val args : BasketFragmentArgs by navArgs()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -35,12 +37,6 @@ class BasketFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         viewModel.getBagProductsByUser(user = "melissacorali")
         initObservers()
-        with(binding){
-            basketAdapter.onRemoveProductClick = {
-                viewModel.deleteFrombag(id)
-            }
-        }
-
 
     }
 
@@ -65,12 +61,10 @@ class BasketFragment : Fragment() {
                              goSucces.setOnClickListener {
                                  findNavController().navigate(R.id.action_basketFragment_to_successFragment)
                                  list.forEach {
-                                     viewModel.deleteFrombag(it.id.toInt())
+                                     viewModel.deleteFrombag(it.id)
                                  }
                              }
-
                         }
-
                     }
                 }
             }

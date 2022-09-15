@@ -73,6 +73,9 @@
         <action
             android:id="@+id/action_basketFragment_to_successFragment"
             app:destination="@id/successFragment" />
+        <argument
+            android:name="productModel"
+            app:argType="com.example.ecommerceapp.data.remote.Products" />
     </fragment>
     <fragment
         android:id="@+id/successFragment"

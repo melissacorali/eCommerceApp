@@ -42,10 +42,11 @@ interface RemoteDAOInterface {
         fun getBagProductsByUser(
             @Field(" user") user: String,
             ): Call<List<Products>>
+
     @POST("delete_to_bag.php")
         @FormUrlEncoded
         fun deleteFromBag(
-            @Field("id") id: Int
+            @Field("id") id: Int,
         ): Call<CRUDResponse>
 
 }

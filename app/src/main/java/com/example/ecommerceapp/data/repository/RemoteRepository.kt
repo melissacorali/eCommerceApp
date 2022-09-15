@@ -131,8 +131,7 @@ class RemoteRepository(context: Context) {
         })
     }
      fun deleteFromBag(id: Int){
-        isLoading.value = true
-        remoteDIF?.deleteFromBag(id)
+        remoteDIF.deleteFromBag(id)
     }
 
     }

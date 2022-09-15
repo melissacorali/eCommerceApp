@@ -44,6 +44,9 @@ class BasketAdapter: RecyclerView.Adapter<BasketAdapter.BasketItemDesign>() {
                         product.image.let {
                             Picasso.get().load(it).into(imageView2)
                         }
+                        delete.setOnClickListener {
+                    onRemoveProductClick(product.id.toInt())
+                        }
 
 
                     }
